@@ -13,18 +13,18 @@
 
  */
 
-#include <SPI.h>
+
 #include <WiFi101.h>
 #include <WiFiUdp.h>
-#include "NTP_Client.h"
+#include "SNTP_Client.h"
 
 // network configuration
 char ssid[] = "Kerndt-IoT";
 char pass[] = "mx9fj9cT@rP#";
 const int MAX_WIFI_RETRY_DELAY = 600000; // milliseconds
 
-// our ntp client
-NTP_client ntp;
+// our SNTP client
+SNTP_Client ntp;
 
 
 void setup()
